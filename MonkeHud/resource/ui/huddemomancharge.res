@@ -1,0 +1,35 @@
+"Resource/UI/HudDemomanCharge.res"
+{
+	"ChargeMeter"
+	{
+		"ControlName" "ContinuousProgressBar"
+		"fieldName" "ChargeMeter"
+		"xpos" "0"
+		"ypos" "25-s0.5"
+		"zpos" "3"
+		"wide" "152"
+		"tall" "6"
+		"visible" "1"
+		"enabled" "1"
+		"fgcolor_override" "255 255 255 255"
+		"bgcolor_override" "0 0 0 0"
+	}
+	"ItemEffectMeterBG"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "ItemEffectMeterBG"
+		"xpos" "0"
+		"ypos" "25-s0.5"
+		"zpos" "3"
+		"wide" "152"
+		"tall" "6"
+		"visible" "1"
+		"enabled" "1"
+		"image" ""
+		"teambg_1" ""
+		"teambg_2" "replay/thumbnails/team_red"
+		"teambg_3" "replay/thumbnails/team_blu"
+		"scaleImage" "1"
+		"bgcolor_override" "0 0 0 219"
+	}
+}

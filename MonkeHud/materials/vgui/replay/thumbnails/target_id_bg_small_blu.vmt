@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"vgui/replay/thumbnails/target_id_bg_small"
+	"$color" "{ 77 116 139 }"
+	"$nolod" "1"
+	"$translucent" "1"
+	"$vertexalpha" "1"
+	"%keywords" "tf,revan"
+}

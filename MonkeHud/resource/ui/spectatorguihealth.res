@@ -1,0 +1,86 @@
+"Resource/UI/SpectatorGUIHealth.res"
+{
+	"PlayerStatusHealthImage"
+	{
+		"ControlName" "ImagePanel"
+		"fieldName" "PlayerStatusHealthImage"
+		"xpos" "-9999"
+		"ypos" "-9999"
+	}
+	"PlayerStatusHealthImageBG"
+	{
+		"ControlName" "ImagePanel"
+		"fieldName" "PlayerStatusHealthImageBG"
+		"xpos" "-9999"
+		"ypos" "-9999"
+	}
+	"BuildingStatusHealthImageBG"
+	{
+		"ControlName" "ImagePanel"
+		"fieldName" "BuildingStatusHealthImageBG"
+		"xpos" "-9999"
+		"ypos" "-9999"
+	}
+	"PlayerStatusHealthBonusImage"
+	{
+		"ControlName" "ImagePanel"
+		"fieldName" "PlayerStatusHealthBonusImage"
+		"xpos" "10"
+		"ypos" "8"
+		"zpos" "3"
+		"wide" "16"
+		"tall" "16"
+		"visible" "0"
+		"enabled" "1"
+		"image" "../hud/health_over_bg"
+		"scaleImage" "1"
+	}
+	"PlayerStatusHealthValue"
+	{
+		"ControlName" "CExLabel"
+		"fieldName" "PlayerStatusHealthValue"
+		"xpos" "0"
+		"ypos" "0"
+		"zpos" "5"
+		"wide" "36"
+		"tall" "32"
+		"visible" "1"
+		"enabled" "1"
+		"labelText" "%Health%"
+		"font" "Bold20"
+		"textAlignment" "center"
+		"fgcolor" "HUD_HealthLabel"
+	}
+	"PlayerStatusHealthValueShadow"
+	{
+		"ControlName" "CExLabel"
+		"fieldName" "PlayerStatusHealthValueShadow"
+		"xpos" "1"
+		"ypos" "1"
+		"zpos" "4"
+		"wide" "36"
+		"tall" "32"
+		"visible" "1"
+		"enabled" "1"
+		"labelText" "%Health%"
+		"font" "Bold20"
+		"textAlignment" "center"
+		"fgcolor" "HUD_HealthShadow"
+	}
+	"PlayerStatusPlayerLevel"
+	{
+		"ControlName" "CExLabel"
+		"fieldName" "PlayerStatusPlayerLevel"
+		"xpos" "8"
+		"xpos_minmode" "0"
+		"ypos" "9"
+		"zpos" "5"
+		"wide" "16"
+		"tall" "12"
+		"visible" "0"
+		"enabled" "1"
+		"textAlignment" "center"
+		"font" "ScoreboardVerySmall"
+		"fgcolor" "TFOrange"
+	}
+}

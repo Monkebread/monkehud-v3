@@ -1,0 +1,47 @@
+"Resource/UI/HudAccountPanel.res"
+{
+	"CHudAccountPanel"
+	{
+		"delta_item_x" "87.5"
+		"delta_item_start_y" "25"
+		"delta_item_end_y" "25"
+		"PositiveColor" "HUD_HealingColour"
+		"NegativeColor" "255 0 0 255"
+		"delta_lifetime" "1"
+		"delta_item_font" "HudFontSmallishBold"
+	}
+	"AccountValue"
+	{
+		"ControlName" "CExLabel"
+		"fieldName" "AccountValue"
+		"xpos" "0"
+		"ypos" "0"
+		"zpos" "2"
+		"wide" "f0"
+		"tall" "f0"
+		"visible" "1"
+		"enabled" "1"
+		"labelText" "%metal%"
+		"font" "HUD_MetalFont"
+		"textAlignment" "north"
+		"fgcolor" "HUD_TextTitle"
+		"proportionaltoparent" "1"
+	}
+	"AccountValueShadow"
+	{
+		"ControlName" "CExLabel"
+		"fieldName" "AccountValueShadow"
+		"xpos" "1"
+		"ypos" "1"
+		"zpos" "1"
+		"wide" "f0"
+		"tall" "f0"
+		"visible" "1"
+		"enabled" "1"
+		"labelText" "%metal%"
+		"font" "HUD_MetalShadow"
+		"textAlignment" "north"
+		"fgcolor" "HUD_Shadow"
+		"proportionaltoparent" "1"
+	}
+}

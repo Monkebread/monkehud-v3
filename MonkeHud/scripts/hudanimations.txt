@@ -1,0 +1,126 @@
+event HudHealthBonusPulse
+{
+	Animate PlayerStatusHealthValue Fgcolor HUD_HealthLabel_Overheal Linear 0 0
+	Animate PlayerStatusHealthValueShadow Fgcolor HUD_HealthShadow_Overheal Linear 0 0
+	Animate HealthBackground Bgcolor HUD_HealthBackground_Overheal Linear 0 0
+	Animate PlayerStatusHealthBonusImage Alpha 255 Linear 0 0.2
+	Animate PlayerStatusHealthBar_Left Alpha 0 Linear 0 0
+	Animate PlayerStatusHealthBar_Right Alpha 0 Linear 0 0
+	Animate PlayerStatusHealthValue_Left Fgcolor HUD_HealthLabel_Overheal Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Left Fgcolor HUD_HealthShadow_Overheal Linear 0 0
+	Animate PlayerStatusHealthValue_Right Fgcolor HUD_HealthLabel_Overheal Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Right Fgcolor HUD_HealthShadow_Overheal Linear 0 0
+}
+event HudHealthBonusPulseStop
+{
+	Animate PlayerStatusHealthValue Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow Fgcolor HUD_HealthShadow Linear 0 0
+	Animate HealthBackground Bgcolor HUD_HealthBackground Linear 0 0.2
+	Animate PlayerStatusHealthBonusImage Alpha 0 Linear 0 0.2
+	Animate PlayerStatusHealthBar_Left Alpha 0 Linear 0 0
+	Animate PlayerStatusHealthBar_Right Alpha 0 Linear 0 0
+	Animate PlayerStatusHealthValue_Left Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Left Fgcolor HUD_HealthShadow Linear 0 0
+	Animate PlayerStatusHealthValue_Right Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Right Fgcolor HUD_HealthShadow Linear 0 0
+}
+event HudHealthDyingPulse
+{
+	Animate PlayerStatusHealthValue Fgcolor HUD_HealthLabel_Dying Linear 0 0
+	Animate PlayerStatusHealthValueShadow Fgcolor HUD_HealthShadow_Dying Linear 0 0
+	Animate HealthBackground Bgcolor HUD_HealthBackground_Dying Linear 0 0
+	Animate PlayerStatusHealthBonusImage Alpha 255 Linear 0 0.2
+	Animate PlayerStatusHealthBar_Left Alpha 255 Linear 0 0
+	Animate PlayerStatusHealthBar_Right Alpha 255 Linear 0 0
+	Animate PlayerStatusHealthValue_Left Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Left Fgcolor HUD_HealthShadow Linear 0 0
+	Animate PlayerStatusHealthValue_Right Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Right Fgcolor HUD_HealthShadow Linear 0 0
+}
+event HudHealthDyingPulseStop
+{
+	Animate PlayerStatusHealthValue Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow Fgcolor HUD_HealthShadow Linear 0 0
+	Animate HealthBackground Bgcolor HUD_HealthBackground Linear 0 0.2
+	Animate PlayerStatusHealthBonusImage Alpha 0 Linear 0 0.2
+	Animate PlayerStatusHealthBar_Left Alpha 0 Linear 0 0
+	Animate PlayerStatusHealthBar_Right Alpha 0 Linear 0 0
+	Animate PlayerStatusHealthValue_Left Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Left Fgcolor HUD_HealthShadow Linear 0 0
+	Animate PlayerStatusHealthValue_Right Fgcolor HUD_HealthLabel Linear 0 0
+	Animate PlayerStatusHealthValueShadow_Right Fgcolor HUD_HealthShadow Linear 0 0
+}
+event HudLowAmmoPulse
+{
+	Animate AmmoInClip Fgcolor HUD_AmmoClip_Warning Linear 0 0
+	Animate AmmoInClipShadow Fgcolor HUD_AmmoClipShadow_Warning Linear 0 0
+	Animate AmmoInReserve Fgcolor HUD_AmmoReserve_Warning Linear 0 0
+	Animate AmmoInReserveShadow Fgcolor HUD_AmmoReserveShadow_Warning Linear 0 0
+	Animate AmmoNoClip Fgcolor HUD_AmmoClip_Warning Linear 0 0
+	Animate AmmoNoClipShadow Fgcolor HUD_AmmoClipShadow_Warning Linear 0 0
+	Animate AmmoBackground Bgcolor HUD_AmmoBackground_Warning Linear 0 0.2
+}
+event HudLowAmmoPulseStop
+{
+	Animate AmmoInClip Fgcolor HUD_AmmoClip Linear 0 0
+	Animate AmmoInClipShadow Fgcolor HUD_AmmoClipShadow Linear 0 0
+	Animate AmmoInReserve Fgcolor HUD_AmmoReserve Linear 0 0
+	Animate AmmoInReserveShadow Fgcolor HUD_AmmoReserveShadow Linear 0 0
+	Animate AmmoNoClip Fgcolor HUD_AmmoClip Linear 0 0
+	Animate AmmoNoClipShadow Fgcolor HUD_AmmoClipShadow Linear 0 0
+	Animate AmmoBackground Bgcolor HUD_AmmoBackground Linear 0 0
+}
+event HudMedicCharged
+{
+	Animate ChargeLabel Fgcolor HUD_Uber0 Linear 0 0.2
+	Animate ChargeMeter Fgcolor HUD_Uber0 Linear 0 0.2
+	Animate ChargeLabel Fgcolor HUD_Uber1 Linear 0.2 0.2
+	Animate ChargeMeter Fgcolor HUD_Uber1 Linear 0.2 0.2
+	RunEvent HudMedicChargedLoop 0.4
+}
+event HudMedicChargedStop
+{
+	StopEvent HudMedicCharged 0
+	StopEvent HudMedicChargedLoop 0
+	Animate ChargeLabel Fgcolor HUD_Uber Linear 0 0
+	Animate ChargeMeter Fgcolor HUD_Uber Linear 0 0
+}
+event CompetitiveGame_LowerChatWindow
+{
+}
+event CompetitiveGame_RestoreChatWindow
+{
+}
+event HudTournament_MoveChatWindow
+{
+}
+event ActiveTimerHighlight
+{
+	Animate TimePanelValue FgColor HUD_TextTitle Linear 0 0
+}
+event ActiveTimerBGPulse
+{
+	Animate ActiveTimerBG Alpha 255 Linear 0 0.1
+}
+event ActiveTimerDim
+{
+	Animate TimePanelValue FgColor HUD_ButtonFg Linear 0 0.4
+}
+event HasNotificationsBlink
+{
+	Animate Notifications_ShowButtonPanel_SB Alpha 255 Linear 0 0.1
+}
+event MenuOpen
+{
+	StopEvent MenuClose 0
+	Animate HudMenu Alpha 255 Linear 0 0.1
+	Animate HudMenu SelectionAlpha 255 Linear 0 0.1
+	Animate HudMenu FgColor FgColor Linear 0 0.1
+	Animate HudMenu MenuColor MenuColor Linear 0 0.1
+	Animate HudMenu TextScan 1 Linear 0 0.1
+	Animate HudMenu Blur 1 Linear 0 0.1
+	Animate EnemyUberMeterFG Size "0 3" Linear 0 0
+	Animate EnemyKritzMeterFG Size "0 3" Linear 0 0
+	Animate EnemyUberMeterFG Size 152 Linear 0 40
+	Animate EnemyKritzMeterFG Size 152 Linear 0 32
+}
